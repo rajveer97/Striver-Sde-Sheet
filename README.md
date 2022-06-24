@@ -40,9 +40,24 @@ Problems | Logic Used | Link
 [3Sum]() |  | [View](./Day_19_3Sum.cpp)
 [Copy List with Random Pointer]() |  | [View](./Day_19_CopyListwithRandomPointer.cpp)
 [Rotate Linked List]() |  | [View](./Day_19_RotateLinkedList.cpp)
+[Maximum Consecutive Ones]() |  | [View](./Day_20_MaximumConsecutiveOnes.cpp)
+[Remove Duplicates from Sorted Array]() |  | [View](./Day_20_RemoveDuplicatesfromSortedArray.cpp)
+[Trapping Rain Water]() |  | [View](./Day_20_TrappingRainWater.cpp)
 []() |  | [View](./)
 []() |  | [View](./)
 []() |  | [View](./)
+[]() |  | [View](./)
+[]() |  | [View](./)
+[]() |  | [View](./)
+[]() |  | [View](./)
+[]() |  | [View](./)
+
+
+
+
+
+
+
 
 
 
