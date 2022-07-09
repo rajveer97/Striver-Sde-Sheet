@@ -85,7 +85,9 @@ Optimized Approach : Binary Search
 */
 int ninjaAndLadoos(vector<int> &row1, vector<int> &row2, int m, int n, int k) {
     // Write your code here.
-    if(n > m)
+    
+    //size of 2nd array should be smaller than the size of the 1st array
+    if(n > m) 
         return ninjaAndLadoos(row2, row1, n, m, k);
     
     int low = max(0, k-n), high = min(k, m);
@@ -99,14 +101,14 @@ int ninjaAndLadoos(vector<int> &row1, vector<int> &row2, int m, int n, int k) {
         int r2 = (cut2==n)?INT_MAX : row2[cut2];
         
         if(l1 <= r2 && l2 <= r1)
-            return max(l1, l2);  
+            return max(l1, l2);  // result
         else if(l1 > r2)
-            high = cut1-1;
+            high = cut1-1;      // reduce
         else if(l2 > r1)
-            low = cut1 + 1;
+            low = cut1 + 1;      // increase
             
     }
-    return 1;
+    return 1;  // if array is not sorted
 }
 /*
 Time Complexity : log(min(m,n))
