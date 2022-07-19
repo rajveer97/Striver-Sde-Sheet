@@ -6,7 +6,7 @@ vector<int> bottomView(BinaryTreeNode<int> * root){
     // Write your code here.
     vector<int> ans;
     if(root==NULL) return ans;
-    map<int, int> mpp;
+    map<int, int> mpp; // line, node->data
     queue<pair<BinaryTreeNode<int>*, int>> q;
     q.push({root, 0});
     
@@ -32,7 +32,8 @@ vector<int> bottomView(BinaryTreeNode<int> * root){
     
     return ans;
 }
-
+// TC : O(N)
+// SC : O(N)
 
 // Method 2: Recursive soltion needs special conditions to handle
 // so its complicated
