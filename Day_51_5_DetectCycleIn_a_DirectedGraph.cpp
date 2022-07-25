@@ -28,7 +28,7 @@ int detectCycleInDirectedGraph(int n, vector < pair < int, int >> & edges) {
     // Write your code here.
     unordered_map<int, vector<int>> adj;
     
-    // create adjacency list
+    // Create adjacency list for Directed Graph
     for(int i = 0; i<edges.size(); i++)
     {
         int u = edges[i].first;
@@ -55,5 +55,5 @@ int detectCycleInDirectedGraph(int n, vector < pair < int, int >> & edges) {
 
 //-------------------------------------------------------
 
-// Method 2: Using BFS
+// Method 2: Using BFS (Kahn's Algorithm)
 
