@@ -1,4 +1,17 @@
+
 // Method 1: Kosaraju's Algorithm
+/*
+Strongly Connected Components: A directed graph is called strongly connected if there is a path in 
+each direction between each pair of vertices of the graph. That is, a path exists from the first 
+vertex in the pair to the second, and another path exists from the second vertex to the first. 
+
+
+/*There are 3 steps in kosaraju's algorithm
+Step 1: Find the topo sort and keep it in the stack.
+Step 2: Find the transpose of your graph basically if A->B is an edge we'll create B->A
+Step 3: Run DFS now and get your answer of different strongly connected components.
+*/
+*/
 #include<stack>
 void dfsSort(int node, vector<int> adj[], vector<int> &vis, stack<int> &st)
 {
