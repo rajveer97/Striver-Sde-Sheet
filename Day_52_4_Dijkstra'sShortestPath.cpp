@@ -1,3 +1,10 @@
+/*
+Dijkstra Algorithm is a graph algorithm for finding the shortest path 
+from a source node to all other nodes in a graph(single-source shortest path). 
+It is a type of greedy algorithm. 
+It only works on weighted graphs with positive weights.
+*/
+
 // Method 1: Dijkstra's Algorithm
 vector<int> dijkstra(vector<vector<int>> &vec, int vertices, int edges, int source) {
     // Write your code here.
@@ -11,7 +18,7 @@ vector<int> dijkstra(vector<vector<int>> &vec, int vertices, int edges, int sour
     
     vector<int> distance(vertices, INT_MAX);
     distance[source] = 0;
-    pq.push({0, source});
+    pq.push({0, source});  // (dist,source)
     while(!pq.empty())
     {
         int dist = pq.top().first;
@@ -30,6 +37,7 @@ vector<int> dijkstra(vector<vector<int>> &vec, int vertices, int edges, int sour
     
     return distance;
 }
-// TC : O((N+E)log N)
-// SC : O(N)
+// Time Complexity: O((N+E)*logN). 
+// Going through N nodes and E edges and log N for priority queue
+// Space Complexity: O(N). Distance array and priority queue
 
