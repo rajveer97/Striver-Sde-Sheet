@@ -52,22 +52,4 @@ Problems | Logic Used | Solutions
 [Subsets II]() |  | [View](./Day_22_SubsetsII.cpp)
 [SubsetSum]() |  | [View](./Day_22_SubsetSum.cpp)
 []() |  | [View](./)
-[]() |  | [View](./)
-[]() |  | [View](./)
-[]() |  | [View](./)
-[]() |  | [View](./)
-[]() |  | [View](./)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
