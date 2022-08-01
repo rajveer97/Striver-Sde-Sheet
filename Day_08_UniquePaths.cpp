@@ -1,23 +1,32 @@
-#include <bits/stdc++.h> 
+// Method 1: Normal array
 int uniquePaths(int m, int n) {
-	vector<vector<int>> v(m, vector<int> (n, 0));
-    
-    // fill last column with 1
-    for(int i=0; i<m; i++) {
-        v[i][n-1] = 1;
-    }
-    
-    // fill last row with 1
-    for(int i=0; i<n; i++) {
-        v[m-1][i] = 1;
-    }
-    
-    // fill the remaining spaces
-    for(int i=m-2; i>=0; i--) {
-        for(int j=n-2; j>=0; j--) {
-            v[i][j] = v[i+1][j] + v[i][j+1];
+    int arr[m][n];
+    for(int i=0; i<n; i++)   // 0th row
+        arr[0][i] = 1;
+
+    for(int i=0; i<m; i++)   // 0th col
+        arr[i][0] = 1;
+
+    for(int i=1; i<m; i++)
+    {
+        for(int j=1; j<n; j++)
+        {
+            arr[i][j] = arr[i-1][j] + arr[i][j-1];
         }
     }
-    
-    return v[0][0];
+
+    return arr[m-1][n-1];
+}
+
+//------------------------------------------------------
+
+// Method 2: DP
+int uniquePaths(int m, int n) {
+    vector<vector<int>> dp(m, vector<int>(n, 1));
+    for (int i = 1; i < m; i++) {
+        for (int j = 1; j < n; j++) {
+            dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+        }
+    }
+    return dp[m - 1][n - 1];
 }
