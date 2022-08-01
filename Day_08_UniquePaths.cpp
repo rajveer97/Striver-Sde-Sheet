@@ -17,6 +17,8 @@ int uniquePaths(int m, int n) {
 
     return arr[m-1][n-1];
 }
+// TC: O(m*n)
+// SC : O(m*n)
 
 //------------------------------------------------------
 
@@ -30,3 +32,5 @@ int uniquePaths(int m, int n) {
     }
     return dp[m - 1][n - 1];
 }
+// TC: O(m*n)
+// SC : O(m*n)
