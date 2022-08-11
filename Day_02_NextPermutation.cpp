@@ -13,6 +13,13 @@ vector<int> nextPermutation(vector<int> &permutation, int n)
     
     return permutation;
 } 
+/*
+Time Complexity: O(N*N!)
+A permutation is each one of the N! possible arrangements the elements 
+can take (where N is the number of elements in the range). 
+Different permutations can be ordered according to how they compare 
+lexicographically to each other
+*/
 
 //-------------------------------------------------------------------
 
