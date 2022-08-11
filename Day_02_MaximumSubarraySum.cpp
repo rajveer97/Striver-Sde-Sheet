@@ -1,3 +1,5 @@
+// Use Kadane's Algorithm
+
 #include <bits/stdc++.h> 
 long long maxSubarraySum(int arr[], int n)
 {
