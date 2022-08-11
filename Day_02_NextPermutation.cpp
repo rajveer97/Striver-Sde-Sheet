@@ -1,10 +1,11 @@
-#include <bits/stdc++.h> 
 /*
 Solution 1 : Using C++ in-built function
 C++ provides an in-built function called next_permutation() 
 which directly returns the lexicographically next greater 
 permutation of the input.
+*/
 
+#include <bits/stdc++.h> 
 vector<int> nextPermutation(vector<int> &permutation, int n)
 {
     //  Write your code here.
@@ -12,13 +13,11 @@ vector<int> nextPermutation(vector<int> &permutation, int n)
     
     return permutation;
 } 
-/*
--------------------------------------------------------------------
-*/
 
-/*
+//-------------------------------------------------------------------
+
 // Solution 2 : 
-*/
+
 vector<int> nextPermutation(vector<int> &permutation, int n)
 {
     //  Write your code here.
