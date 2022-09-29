@@ -1,9 +1,11 @@
 #include<bits/stdc++.h>
+
 /*
-Naive Approach: (TLE)
+Method 1: Naive Approach: (TLE)
 A Simple Solution is to generate all pairs of the given 
 array and compute the XOR of the pairs. Finally, return the maximum XOR value. 
 This solution takes O(N^{2}) time.
+*/
 
 int maximumXor(vector<int> A)
 {
@@ -21,12 +23,12 @@ int maximumXor(vector<int> A)
 }
 /*
 Time Complexity: O(N^{2}) , where N is the size of the array
-Auxiliary Space: O(1)
------------------------------------------------------------
-*/
+Auxiliary Space: O(1)*/
+// -----------------------------------------------------------
+
 
 /*
-Efficient Approach: 
+Mehtod 2: Efficient Approach: 
 1. The idea is to change the problem statement from finding the 
 maximum xor of two numbers in an array to -> find two numbers in 
 an array, such that xor of which equals to a number X. In this case, 
@@ -42,7 +44,7 @@ many bits are remaining from the number ) in the input till
 the i-th bit then with the list of possible numbers in our set, 
 after inserting the number we will evaluate if we can update the max 
 for that bit position to be 1.
-
+*/
 int maximumXor(vector<int> arr)
 {
     // Write your code here.   
@@ -93,7 +95,7 @@ Auxiliary Space: O(logM)
 */
 
 /*
-Better Approach: Use Trie data structure 
+Method 3: Better Approach: Use Trie data structure 
 1) Put all numbers of array in trie
 2) Again with each number of array find the maximum xor with trie.
 */
